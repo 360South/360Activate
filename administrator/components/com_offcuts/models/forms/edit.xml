@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+
+  <fieldset>
+
+    <field name="id" type="text" default="0" label="COM_OFFCUTS_FORM_LBL_EDIT_ID"
+
+		readonly="true" class="readonly"
+
+		description="JGLOBAL_FIELD_ID_DESC" />
+
+    <field name="created_by" type="createdby" default="" 
+
+		label="COM_OFFCUTS_FORM_LBL_EDIT_CREATED_BY"
+
+		description="COM_OFFCUTS_FORM_DESC_EDIT_CREATED_BY"  />
+
+    <field name="title" type="text" size="40" class="inputbox"
+
+		label="COM_OFFCUTS_FORM_LBL_EDIT_TITLE"
+
+		description="COM_OFFCUTS_FORM_DESC_EDIT_TITLE" 
+
+        required="true" 
+
+		filter="safehtml" />
+
+	<field name="intro" type="text" size="40" class="inputbox" height="300"
+
+		label="COM_OFFCUTS_FORM_LBL_EDIT_INTRO"
+
+		description="COM_OFFCUTS_FORM_DESC_EDIT_INTRO" 
+
+		filter="safehtml" />			
+
+    <field name="catid" type="sql" class="inputbox"
+
+		label="COM_OFFCUTS_FORM_LBL_EDIT_CATID"
+
+		description="COM_OFFCUTS_FORM_DESC_EDIT_CATID" 
+
+		multiple="multiple"
+
+		query="SELECT 0 AS `id`, '- Select Parent -' AS `title` UNION SELECT `id`, `title` FROM `#__offcuts_items`" key_field="id" value_field="title" 
+
+    />
+
+	<field name="image1old" type="thumb"
+
+		class="inputbox"
+
+		width="1300"
+
+		height="800"
+
+		label="COM_OFFCUTS_FORM_LBL_EDIT_IMAGE"
+
+		description="COM_OFFCUTS_FORM_DESC_EDIT_IMAGE" />
+	<field 
+		name="image1" 
+		type="media" 
+		label="COM_OFFCUTS_FORM_LBL_EDIT_IMAGE"
+		description="COM_OFFCUTS_FORM_DESC_EDIT_IMAGE"
+		directory="offcuts" 
+	/>
+
+	<field name="image2old" type="thumb"
+
+		class="inputbox"
+
+		width="650"
+
+		height="650"
+
+		label="COM_OFFCUTS_FORM_LBL_EDIT_IMAGE"
+
+		description="COM_OFFCUTS_FORM_DESC_EDIT_IMAGE" />
+	<field 
+		name="image2" 
+		type="media" 
+		label="COM_OFFCUTS_FORM_LBL_EDIT_IMAGE"
+		description="COM_OFFCUTS_FORM_DESC_EDIT_IMAGE"
+		directory="offcuts" 
+	/>
+
+	<field name="image3" type="thumb"
+
+		class="inputbox"
+
+		width="650"
+
+		height="650"
+
+		label="COM_OFFCUTS_FORM_LBL_EDIT_IMAGE"
+
+		description="COM_OFFCUTS_FORM_DESC_EDIT_IMAGE" />
+	<field 
+		name="image3" 
+		type="media" 
+		label="COM_OFFCUTS_FORM_LBL_EDIT_IMAGE"
+		description="COM_OFFCUTS_FORM_DESC_EDIT_IMAGE"
+		directory="offcuts" 
+	/>
+
+
+	<field name="metatitle" type="text"
+
+		class="inputbox"
+
+		label="COM_OFFCUTS_FORM_LBL_EDIT_METATITLE"
+
+		description="COM_OFFCUTS_FORM_DESC_EDIT_METATITLE" />
+
+	<field name="metakeys" type="textarea"
+
+		class="inputbox"
+
+		label="COM_OFFCUTS_FORM_LBL_EDIT_METAKEYS"
+
+		description="COM_OFFCUTS_FORM_DESC_EDIT_METAKEYS" />
+
+	<field name="metadesc" type="textarea"
+
+		class="inputbox"
+
+		label="COM_OFFCUTS_FORM_LBL_EDIT_METADESC"
+
+		description="COM_OFFCUTS_FORM_DESC_EDIT_METADESC" />
+
+		
+
+    <field
+
+        name="state"
+
+        type="list"
+
+        label="JSTATUS"
+
+        description="JFIELD_PUBLISHED_DESC"
+
+        class="inputbox"
+
+        size="1"
+
+        default="1">
+
+      <option value="1">JPUBLISHED</option>
+
+      <option value="0">JUNPUBLISHED</option>
+
+    </field>
+
+    <field name="checked_out" type="hidden" filter="unset" />
+
+    <field name="checked_out_time" type="hidden" filter="unset" />
+
+  </fieldset>
+
+</form>

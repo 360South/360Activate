@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+  <layout title="Form" option="View">
+    <message>Displays the Contact Form</message>
+  </layout>
+  <config>
+    <fields name="params">
+      <fieldset name="basic" addfieldpath="/components/com_packages/models/fields">
+        <field name="catid" type="categories"
+			label="Category"
+			description="Select Category"
+		></field>
+      </fieldset>
+    </fields>
+  </config>
+</metadata>

@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="Zepel Fabrics" />
+<title>Zepel Fabrics | Error</title>
+<link href="/templates/follower/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<link rel="stylesheet" href="/templates/home/css/layout.css" type="text/css" />
+<link rel="stylesheet" href="/templates/home/css/lightbox.css" type="text/css" />
+<link rel="stylesheet" href="/templates/home/css/selectbox.css" type="text/css" />
+<link rel="stylesheet" href="/templates/home/css/camera.css" type="text/css" />
+<link rel="stylesheet" href="/templates/home/css/jpm-menu.css" type="text/css" />
+<link rel="stylesheet" href="/templates/home/fonts/ss-standard.css" type="text/css" />
+<link rel="stylesheet" href="/templates/home/css/template.css" type="text/css" />
+<link rel="stylesheet" href="/media/com_acymailing/css/module_default.css" type="text/css" />
+<link rel="stylesheet" href="/media/com_finder/css/finder.css" type="text/css" />
+<script src="/media/jui/js/jquery.min.js" type="text/javascript"></script>
+<script src="/media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+<script src="/media/jui/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/templates/home/js/modernizr.js" type="text/javascript"></script>
+<script src="/templates/home/js/jquery.easing.min.js" type="text/javascript"></script>
+<script src="/templates/home/js/jquery.camera.min.js" type="text/javascript"></script>
+<script src="/templates/home/js/placeholder.js" type="text/javascript"></script>
+<script src="/templates/home/js/jquery.validate.min.js" type="text/javascript"></script>
+<script src="/templates/home/js/additional-methods.min.js" type="text/javascript"></script>
+<script src="/templates/home/js/jquery.metadata.js" type="text/javascript"></script>
+<script src="/templates/home/js/jquery.lightbox.min.js" type="text/javascript"></script>
+<script src="/templates/home/js/jquery.selectbox.min.js" type="text/javascript"></script>
+<script src="/templates/home/js/jquery.jpanelmenu.js" type="text/javascript"></script>
+<script src="/templates/home/js/jquery.cookie.js" type="text/javascript"></script>
+<script src="/templates/home/js/jquery.tooltipster.min.js" type="text/javascript"></script>
+<script src="/templates/home/js/applications.js" type="text/javascript"></script>
+<script src="http://use.typekit.net/yoh3two.js" type="text/javascript"></script>
+<script src="/media/com_acymailing/js/acymailing_module.js" type="text/javascript"></script>
+<script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
+<script src="/media/system/js/core.js" type="text/javascript"></script>
+<script src="/media/com_finder/js/autocompleter.js" type="text/javascript"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" />
+<link href="/apple-touch-icon-72.png" rel="apple-touch-icon" sizes="72x72" />
+<link href="/apple-touch-icon-114.png" rel="apple-touch-icon" sizes="114x114" />
+<!--[if gte IE 9]><style type="text/css">.gradient{filter:none}</style><![endif]-->
+</head>
+<body>
+<a class="menu-trigger ss-icon" href="#menu">&#xE9A1;</a> <a href="#" class="scroll">Scroll to Top</a> <a href="/contact.html" class="feedback-follower">Send Feedback</a>
+<div class="top">
+  <div class="grid-pad grid">
+    <div class="col-1-1">
+      <div class="content">
+        <ul class="nav menu">
+          <li class="item-101"><a href="/" >Home</a></li>
+          <li class="item-107"><a href="/showrooms.html">Showrooms</a></li>
+          <li class="item-108"><a href="/sample-basket.html">Sample Basket</a></li>
+          <li class="item-109"><a href="/contact.html">Contact</a></li>
+        </ul>
+        <script type="text/javascript">
+  		//<![CDATA[
+		window.addEvent('domready', function()
+		{
+		  var value;
+		  // Set the input value if not already set.
+		  if (!document.id('mod-finder-searchword').getProperty('value'))
+		  {
+	  	    document.id('mod-finder-searchword').setProperty('value', 'Search...');
+	 	  }
+		  // Get the current value.
+		  value = document.id('mod-finder-searchword').getProperty('value');
+		  // If the current value equals the default value, clear it.
+		  document.id('mod-finder-searchword').addEvent('focus', function()
+	 	  {
+			if (this.getProperty('value') == 'Search...')
+			{
+			  this.setProperty('value', '');
+			}
+		  });
+		  // If the current value is empty, set the previous value.
+		  document.id('mod-finder-searchword').addEvent('blur', function()
+		  {
+			if (!this.getProperty('value'))
+			{
+			  this.setProperty('value', value);
+			}
+	  	  });
+		  document.id('mod-finder-searchform').addEvent('submit', function(e){
+			e = new Event(e);
+			e.stop();
+			// Disable select boxes with no value selected.
+			if (document.id('mod-finder-advanced') != null)
+			{
+			  document.id('mod-finder-advanced').getElements('select').each(function(s){
+				if (!s.getProperty('value'))
+				{
+				  s.setProperty('disabled', 'disabled');
+				}
+			  });
+			}
+			document.id('mod-finder-searchform').submit();
+		  });
+		  var url = '/component/finder/?task=suggestions.display&format=json&tmpl=component';
+	      var ModCompleter = new Autocompleter.Request.JSON(document.id('mod-finder-searchword'), url, {'postVar': 'q'});
+		});
+        </script>
+        <form id="mod-finder-searchform" action="/search-results.html" method="get" class="form-search">
+          <div class="finder">
+            <input type="text" name="q" id="mod-finder-searchword" class="search-query input-medium" size="25" value="" />
+            <button class="btn btn-primary hasTooltip  finder" type="submit" title="Go"><i class="icon-search icon-white"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="header">
+  <div class="grid-pad grid overflow">
+    <div class="col-4-12 nopadding">
+      <div class="content logo"><a href="/"><img src="/templates/home/images/logo.png" width="431" height="59" alt="Zepel Fabrics" /></a></div>
+    </div>
+    <div class="col-8-12 nopadding">
+      <div class="content">
+        <ul class="nav menu"><li class="item-111 deeper parent"><a href="/our-brands.html">Our Brands</a></li><li class="item-112"><a href="/product-finder.html">Product Finder</a></li><li class="item-113"><a href="/projects.html">Projects</a></li><li class="item-114"><a href="/latest.html">Latest</a></li><li class="item-115 deeper parent"><a href="/about.html">About</a></li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="breadcrumbs">
+  <div class="grid-pad grid">
+    <div class="col-1-1">
+      <div class="content">
+        <ul class="breadcrumb">
+          <li><a href="/" class="pathway">Home</a><span class="divider">&gt;</span></li>
+          <li><span>Error</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content component dark error">
+  <div class="grid-pad grid">
+    <div class="col-1-1">
+      <img src="/templates/home/images/error-page.jpg" width="1140" height="341" alt="There has been an error." />
+      <p class="large">Please head back to the <a href="/">home page</a> and try again.</p>
+    </div>
+  </div>
+</div>
+<div class="content contact">
+  <div class="grid-pad grid">
+    <div class="col-1-1">
+      <h2>Make Contact With Us</h2>
+    </div>
+  </div>
+  <div class="grid-pad grid">
+    <div class="col-1-3 item">
+      <div class="content">
+        <h3>Call Us Toll Free</h3>
+        <p>1800 651 510</p>
+      </div>
+    </div>
+    <div class="col-1-3 item">
+      <div class="content">
+        <h3>Showroom Locations</h3>
+        <p><a href="/showrooms.html"><img src="/templates/home/images/icon-showroom-locations.png" width="74" height="58" alt="Showroom Locations" /></a></p>
+      </div>
+    </div>
+    <div class="col-1-3 item">
+      <div class="content newsletter">
+        <h3>Sign up for our Newsletter</h3>
+        <form id="newsletter-form" action="/product-finder.html" name="formAcymailing78521">
+          <div class="input">
+            <input type="text" name="user[email]" class="inputbox email required" id="user_email_formAcymailing84471" placeholder="E-mail">
+            <input type="submit" name="submit" value="Subscribe" class="button">
+            <div class="clear"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content social">
+  <div class="grid-pad grid">
+    <div class="col-1-1 item">
+      <div class="content"> 
+        <img src="/templates/home/images/blank.png" width="38" height="32" alt="Facebook" class="item-1" />
+        <img src="/templates/home/images/blank.png" width="38" height="32" alt="Instagram" class="item-2" />
+        <img src="/templates/home/images/blank.png" width="38" height="32" alt="Pinterest" class="item-3" />
+        <img src="/templates/home/images/blank.png" width="38" height="32" alt="Twitter" class="item-4" />
+        <img src="/templates/home/images/blank.png" width="38" height="32" alt="Tumblr" class="item-5" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content copy">
+  <div class="grid">
+    <div class="col-1-1">
+      <div class="content">
+        <p>All Rights Reserved &copy; Zepel Fabrics 2013</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

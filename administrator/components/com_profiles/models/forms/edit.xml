@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="text" default="0" label="COM_PROFILES_FORM_LBL_EDIT_ID"
+		readonly="true" class="readonly"
+		description="JGLOBAL_FIELD_ID_DESC" />
+    <field name="created_by" type="createdby" default="" 
+		label="COM_PROFILES_FORM_LBL_EDIT_CREATED_BY"
+		description="COM_PROFILES_FORM_DESC_EDIT_CREATED_BY"  />
+    <field name="title" type="text" size="40" class="inputbox"
+		label="COM_PROFILES_FORM_LBL_EDIT_TITLE"
+		description="COM_PROFILES_FORM_DESC_EDIT_TITLE" 
+		required="true" 
+		filter="safehtml" />
+	<field name="catid" type="text" size="40" class="inputbox"
+		label="COM_PROFILES_FORM_LBL_EDIT_CATID"
+		description="COM_PROFILES_FORM_DESC_EDIT_CATID" 
+		filter="safehtml" />
+	<field name="position" type="text" size="40" class="inputbox"
+		label="COM_PROFILES_FORM_LBL_EDIT_POSITION"
+		description="COM_PROFILES_FORM_DESC_EDIT_POSITION" 
+		filter="safehtml" />
+    <field name="image" type="thumb" size="40" class="inputbox"
+	    width="960"
+		height="645"
+		label="COM_PROFILES_FORM_LBL_EDIT_IMAGE"
+		description="COM_PROFILES_FORM_DESC_EDIT_IMAGE" 
+        filter="safehtml" />
+    <field name="access" type="hidden"
+		label="COM_PROFILES_FORM_LBL_EDIT_ACCESS"
+		description="COM_PROFILES_FORM_DESC_EDIT_ACCESS" 
+		default="1" 
+		/>
+    <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+    </field>
+    <field name="checked_out" type="hidden" filter="unset" />
+    <field name="checked_out_time" type="hidden" filter="unset" />
+  </fieldset>
+</form>

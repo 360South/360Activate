@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="hidden" default="0" label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_ID"
+		readonly="true" class="readonly"
+		description="JGLOBAL_FIELD_ID_DESC" />
+    <field name="created_by" type="createdby" default="" 
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_CREATED_BY"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_CREATED_BY" />
+	<field name="date" type="text" size="40" class="inputbox"
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_DATE"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_DATE"
+		readonly="true" 
+		filter="safehtml" />
+	<field name="package" type="package" size="40" class="inputbox"
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_PACKAGE"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_PACKAGE" 
+		readonly="true"
+		filter="safehtml" />
+	<field name="firstname" type="text" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+		readonly="true" 
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_FIRSTNAME"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_FIRSTNAME" />	
+	<field name="lastname" type="text" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+		readonly="true" 
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_LASTNAME"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_LASTNAME" />
+	<field name="email" type="text" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+		readonly="true" 
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_EMAIL"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_EMAIL" />
+	<field name="phone" type="text" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+		readonly="true" 
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_PHONE"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_PHONE" />
+	<field name="country" type="text" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+		readonly="true" 
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_COUNTRY"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_COUNTRY" />
+	<field name="cstate" type="text" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+		readonly="true" 
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_CSTATE"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_CSTATE" />
+	<field name="adate" type="text" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+		readonly="true" 
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_ADATE"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_ADATE" />
+	<field name="ddate" type="text" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+		readonly="true" 
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_DDATE"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_DDATE" />
+	
+	<field name="adult" type="text" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+		readonly="true" 
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_ADULT"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_ADULT" />
+	<field name="children" type="text" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+		readonly="true" 
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_CHILDREN"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_CHILDREN" />
+	<field name="infants" type="text" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+		readonly="true" 
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_INFANTS"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_INFANTS" />
+	
+	<field name="rooms" type="text" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+		readonly="true" 
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_ROOMS"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_ROOMS" />
+	<field name="ability" type="text" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+		readonly="true" 
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_ABILITY"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_ABILITY" />
+	<field name="nights" type="text" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+		readonly="true" 
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_NIGHTS"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_NIGHTS" />
+	<field name="hotel" type="text" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+		readonly="true" 
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_HOTEL"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_HOTEL" />
+	<field name="lessons" type="text" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+		readonly="true" 
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_LESSONS"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_LESSONS" />
+	<field name="request" type="textarea" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+		readonly="true" 
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_REQUEST"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_REQUEST" />
+	<field name="stay" type="textarea" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+		readonly="true" 
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_STAY"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_STAY" />
+	<field name="rentals" type="textarea" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+		readonly="true" 
+		label="COM_REQUESTQUOTE_FORM_LBL_CEDIT_RENTALS"
+		description="COM_REQUESTQUOTE_FORM_DESC_CEDIT_RENTALS" />
+		
+    <field
+        name="state"
+        type="hidden"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+    </field>
+    <field name="checked_out" type="hidden" filter="unset" />
+    <field name="checked_out_time" type="hidden" filter="unset" />
+  </fieldset>
+</form>

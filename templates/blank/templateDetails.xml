@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="2.5" type="template" method="upgrade">
+  <name>Blank</name>
+  <creationDate>April 2012</creationDate>
+  <author>Leanne Seawright</author>
+  <copyright>Copyright © www.360south.com.au</copyright>
+  <authorEmail>leanne@360south.com.au</authorEmail>
+  <authorUrl>http://www.360south.com.au</authorUrl>
+  <version>1.0.0</version>
+  <description>
+    <![CDATA[<h1>Blank Template</h1>
+      <p><img src="../templates/home/template_preview.png" /></p>
+      <h2>Module positions</h2>
+      <ol>
+      <li>header</li><li>menu</li><li>footer</li><li>debug</li>
+      </ol>
+      <p>Created by <a href="http://www.360south.com.au" target="_blank">Leanne Seawright | www.360south.com.au</a>.</p>]]>
+  </description>
+  <files>
+    <folder>css</folder>
+    <folder>html</folder>
+    <folder>images</folder>
+    <folder>js</folder>
+    <filename>component.php</filename>
+    <filename>error.php</filename>
+    <filename>favicon.ico</filename>
+    <filename>index.php</filename>
+    <filename>offline.php</filename>
+    <filename>template_preview.png</filename>
+    <filename>template_thumbnail.png</filename>
+    <filename>templateDetails.xml</filename>
+  </files>
+  <languages folder="language">
+    <language tag="en-GB">en-GB.tpl_templatename.ini</language>
+  </languages>
+  <positions>
+    <position>header</position>
+    <position>menu</position>
+    <position>footer</position>
+    <position>debug</position>
+    <position>position-1</position>
+    <position>position-2</position>
+    <position>position-3</position>
+    <position>position-4</position>
+    <position>position-5</position>
+    <position>position-6</position>
+    <position>position-7</position>
+  </positions>
+  <config>
+    <fields name="params">
+      <fieldset name="advanced">
+        <field name="FIELD_SPACER_HEADER_DESC" type="spacer" hr="false" />
+      </fieldset>
+    </fields>
+  </config>
+</extension>

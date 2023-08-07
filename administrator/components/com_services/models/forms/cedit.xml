@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="text" default="0" label="COM_SERVICES_FORM_LBL_CEDIT_ID"
+		readonly="true" class="readonly"
+		description="JGLOBAL_FIELD_ID_DESC" />
+    <field name="created_by" type="createdby" default="" 
+		label="COM_SERVICES_FORM_LBL_CEDIT_CREATED_BY"
+		description="COM_SERVICES_FORM_DESC_CEDIT_CREATED_BY"  />
+    <field name="title" type="text" size="40" class="inputbox"
+		label="COM_SERVICES_FORM_LBL_CEDIT_TITLE"
+		description="COM_SERVICES_FORM_DESC_CEDIT_TITLE" 
+        required="true" 
+		filter="safehtml" />
+    <field name="body" type="textarea"
+        class="inputbox"
+		label="COM_SERVICES_FORM_LBL_CEDIT_BODY"
+		description="COM_SERVICES_FORM_DESC_CEDIT_BODY"
+		filter="safehtml"
+	/>
+	<field name="catid" type="sql"
+	    class="inputbox"
+		label="COM_SERVICES_FORM_LBL_CEDIT_CATID"
+		description="COM_SERVICES_FORM_DESC_CEDIT_CATID"
+		filter="raw" 
+		multiple="true" 
+		query="SELECT 0 AS `id`, '- Select Service -' AS `title` UNION SELECT `id`, `title` FROM `#__services_items`" key_field="id" value_field="title" 
+    />
+	<field name="filename" type="filelist" default=""
+		   label="COM_SERVICES_FORM_LBL_CEDIT_FILENAME"
+		   description="COM_SERVICES_FORM_DESC_CEDIT_FILENAME"
+		   directory="downloads"
+		   filter=""
+		   exclude=""
+		   stripext="" />	
+    <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+    </field>
+    <field name="checked_out" type="hidden" filter="unset" />
+    <field name="checked_out_time" type="hidden" filter="unset" />
+  </fieldset>
+</form>

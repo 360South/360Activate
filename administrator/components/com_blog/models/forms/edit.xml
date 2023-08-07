@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="text" default="0" label="COM_BLOG_FORM_LBL_EDIT_ID"
+		readonly="true" class="readonly"
+		description="JGLOBAL_FIELD_ID_DESC" />
+    <field name="created_by" type="createdby" default="" 
+		label="COM_BLOG_FORM_LBL_EDIT_CREATED_BY"
+		description="COM_BLOG_FORM_DESC_EDIT_CREATED_BY"  />
+    <field name="title" type="text" size="40" class="inputbox"
+		label="COM_BLOG_FORM_LBL_EDIT_TITLE"
+		description="COM_BLOG_FORM_DESC_EDIT_TITLE" 
+        required="true" 
+		filter="safehtml" />
+	<field name="author" type="sql" class="inputbox"
+		label="COM_BLOG_FORM_LBL_EDIT_AUTHOR"
+		description="COM_BLOG_FORM_DESC_EDIT_AUTHOR" 
+        multiple="false"
+        required="true" 
+        query="SELECT 0 AS `id`, '- Select Author -' AS `title` UNION SELECT `id`, `title` FROM `#__profiles_items`" key_field="id" value_field="title"
+    />
+	<field name="introtext" type="textarea" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+        required="true" 
+		label="COM_BLOG_FORM_LBL_EDIT_INTROTEXT"
+		description="COM_BLOG_FORM_DESC_EDIT_INTROTEXT"  />
+	
+	<field name="subintrotext" type="textarea" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+		label="COM_BLOG_FORM_LBL_EDIT_INTROTEXT"
+		description="COM_BLOG_FORM_DESC_EDIT_INTROTEXT"  />
+	
+	<field name="body" type="editor" buttons="true"
+        class="inputbox"
+        filter="raw"
+        required="true" 
+		label="COM_BLOG_FORM_LBL_EDIT_BODY"
+		description="COM_BLOG_FORM_DESC_EDIT_BODY"  />
+    <field name="date" type="calendar"
+		label="COM_BLOG_FORM_LBL_EDIT_DATE"
+		description="COM_BLOG_FORM_DESC_EDIT_DATE" 
+		default="NOW" 
+		required="true" 
+		filter="raw" />
+	<field name="image" type="thumb" size="40" class="inputbox"
+		label="COM_BLOG_FORM_LBL_EDIT_IMAGE"
+		description="COM_BLOG_FORM_DESC_EDIT_IMAGE" 
+		required="true"
+		width="600"
+		height="455"
+        filter="safehtml" />
+    <field name="catid" type="sql" class="inputbox"
+		label="COM_BLOG_FORM_LBL_EDIT_CATID"
+		description="COM_BLOG_FORM_DESC_EDIT_CATID" 
+        multiple="false"
+        required="true" 
+        query="SELECT 0 AS `id`, '- Select Category -' AS `title` UNION SELECT `id`, `title` FROM `#__blog_categories`" key_field="id" value_field="title"
+    />
+    <field name="filter_catid" type="sql" class="inputbox"
+		onchange="this.form.submit();"
+		query="SELECT 0 AS `id`, '- Select Category -' AS `title` UNION SELECT `id`, `title` FROM `#__blog_categories`" key_field="id" value_field="title"
+	/>
+    <field name="access" type="text" size="40" class="inputbox"
+		label="COM_BLOG_FORM_LBL_EDIT_ACCESS"
+		description="COM_BLOG_FORM_DESC_EDIT_ACCESS" 
+		default="1" 
+        filter="safehtml" />
+    <field name="metakeys" type="textarea"
+		label="COM_BLOG_FORM_LBL_EDIT_METAKEYS"
+		description="COM_BLOG_FORM_DESC_EDIT_METAKEYS" 
+		cols="100"
+		rows="6"
+		filter="raw" />
+    <field name="metadesc" type="textarea"
+		label="COM_BLOG_FORM_LBL_EDIT_METADESC"
+		description="COM_BLOG_FORM_DESC_EDIT_METADESC" 
+		cols="100"
+		rows="6"
+		filter="raw" />
+    <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+    </field>
+    <field name="checked_out" type="hidden" filter="unset" />
+    <field name="checked_out_time" type="hidden" filter="unset" />
+  </fieldset>
+</form>

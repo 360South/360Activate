@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+     <layout title="Details" option="View">
+          <message>Displays the Details</message>
+     </layout>
+     <config>
+          <fields name="params">
+               <fieldset name="basic" addfieldpath="/components/com_displays/models/fields">
+                    <field name="catid" type="item"
+					label="Item"
+					description="Select Item"></field>
+               </fieldset>
+          </fields>
+     </config>
+</metadata>
