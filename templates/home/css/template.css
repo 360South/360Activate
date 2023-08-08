@@ -62,8 +62,8 @@ p { font-size: 1.15em; }
 .link__logo span { position: absolute; height: 50%; width: 100%; left: 0; top: 0; overflow: hidden; }
 .link__logo span:nth-child(2) { top: 50%; }
 .link__logo span::before { position: absolute; left: 0; width: 100%; height: 62px; color: #fff; -webkit-transition: -webkit-transform 0.5s; transition: transform 0.5s; background-image: url("../images/logo.svg"); content: ""; }
-.link__logo span:nth-child(2)::before { top: 0; -webkit-transform: translate3d(0, 100%, 0); transform: translate3d(0, 100%, 0); background-position: 0 -25.5px; }
-.link__logo span:nth-child(3)::before { bottom: 0; -webkit-transform: translate3d(0, -100%, 0); transform: translate3d(0, -100%, 0); background-position: 0 36px; }
+.link__logo span:nth-child(2)::before { top: 0; -webkit-transform: translate3d(0, 100%, 0); transform: translate3d(0, 100%, 0); background-position: 0 -19.5px; }
+.link__logo span:nth-child(3)::before { bottom: 0; -webkit-transform: translate3d(0, -100%, 0); transform: translate3d(0, -100%, 0); background-position: 0 43px; }
 .link__logo:hover span::before { -webkit-transition-delay: 0.3s; transition-delay: 0.3s; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
 
 @media screen and (max-width:640px) {
